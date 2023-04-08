@@ -32,7 +32,7 @@ export default function Graph() {
 
 
   return (
-    <div className="flex justify-center bg-white rounded-3xl m-6 p-6 h-80">
+    <div className="flex justify-center bg-white rounded-3xl m-6 m p-6 h-80">
       {/* <h1 className="font-bold">Graph here.</h1> */}
       <div className="">
         <Line data={data} options={options}></Line>

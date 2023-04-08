@@ -16,7 +16,7 @@ import {InfoCard1, InfoCard2} from "./dash-components/InfoCard";
 export default function Home() {
 
 
-  return (<Dashboard/>);
+  // return (<Dashboard/>);
   // return (<Card></Card>)
   // return (<Graph/>)
   // return (<InfoCard2/>)
