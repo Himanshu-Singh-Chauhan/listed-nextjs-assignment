@@ -7,9 +7,9 @@ import Form from "./Form";
 import { useSession, signIn, signOut } from "next-auth/react"
 import { getSession } from "next-auth/react";
 import Dashboard from "./Dashboard";
-import Card from "./Card";
-import Graph from "./Graph";
-import {InfoCard1, InfoCard2} from "./InfoCard";
+import Card from "../dash-components/Card";
+import Graph from "../dash-components/Graph";
+import {InfoCard1, InfoCard2} from "../dash-components/InfoCard";
 
 
 

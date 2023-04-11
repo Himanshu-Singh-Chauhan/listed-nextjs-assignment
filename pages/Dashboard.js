@@ -1,9 +1,9 @@
 import { useSession, signOut } from "next-auth/react";
 import { getSession } from "next-auth/react";
 import Image from "next/image";
-import Card from "./Card";
-import Graph from "./Graph";
-import { InfoCard1, InfoCard2 } from "./InfoCard";
+import Card from "../dash-components/Card";
+import Graph from "../dash-components/Graph";
+import { InfoCard1, InfoCard2 } from "../dash-components/InfoCard";
 import NavBar from "./Navbar";
 
 export default function Dashboard() {
