@@ -56,7 +56,7 @@ export function InfoCard2() {
   return (
     <div className="grow bg-white rounded-3xl min-w-[20rem] m-6 p-6">
       <div className="flex justify-between">
-        <h1 className="font-bold">Today's Schedules </h1>
+        <h1 className="font-bold">Today&apos;`s Schedules </h1>
         <div>
           <h1 className="inline font-thin">See All</h1>
           <svg

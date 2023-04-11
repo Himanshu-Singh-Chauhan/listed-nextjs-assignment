@@ -81,7 +81,7 @@ export default function Home() {
                 
               </div>
             </div>
-              <p className="inline m-3">Don't have an account <a className="text-blue-500 hover:text-blue-800 hover:cursor-pointer">Register here</a></p>
+              <p className="inline m-3">Don&apos;`t have an account <a className="text-blue-500 hover:text-blue-800 hover:cursor-pointer">Register here</a></p>
           </div>
         </div>
       </main>
