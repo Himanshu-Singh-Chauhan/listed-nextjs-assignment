@@ -1,12 +1,12 @@
 export default function NavBar() {
     return (
-        <div className="w-60 bg-black rounded-3xl m-6 p-8 -xl:hidden">
+        <div className="w-60 h-screen bg-black rounded-3xl m-6 p-8 -xl:hidden">
           <h1 className=" text-3xl font-bold text-white block text mt-4 ml-0 mb-12">
             Board.
           </h1>
           <div className="flex flex-col relative ">
             <ul class="list-none text-white space-y-8 mt-2">
-              <li>
+              <li className="font-bold">
                 <svg
                   width="18"
                   height="18"

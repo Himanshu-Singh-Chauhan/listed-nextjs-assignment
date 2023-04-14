@@ -7,9 +7,9 @@ import Form from "./Form";
 import { useSession, signIn, signOut } from "next-auth/react"
 import { getSession } from "next-auth/react";
 import Dashboard from "./Dashboard";
-import Card from "../dash-components/Card";
-import Graph from "../dash-components/Graph";
-import {InfoCard1, InfoCard2} from "../dash-components/InfoCard";
+import Card from "../components/dash-components/Card";
+import Graph from "../components/dash-components/Graph";
+import {InfoCard1, InfoCard2} from "../components/dash-components/InfoCard";
 
 
 
@@ -18,7 +18,7 @@ export default function Home() {
 
   // return (<Dashboard/>);
   // return (<Card></Card>)
-  // return (<Graph/>)
+  // return (<Graph title="himanshu" subheader="chauhan" />)
   // return (<InfoCard2/>)
 
   const { data: session } = useSession()
