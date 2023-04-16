@@ -1,6 +1,6 @@
 export default function NavBar() {
     return (
-        <div className="w-60 h-screen bg-black rounded-3xl m-6 p-8 -xl:hidden">
+        <div className=" bg-black rounded-3xl p-8 h-full">
           <h1 className=" text-3xl font-bold text-white block text mt-4 ml-0 mb-12">
             Board.
           </h1>
