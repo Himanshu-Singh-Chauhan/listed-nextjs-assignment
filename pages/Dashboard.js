@@ -21,8 +21,8 @@ export default function Dashboard() {
         {/* Right Pane */}
 
         {/* <div className="items-center dgrid grid-col-1 auto-cols-fr m-2 sm:mx-12 max-w-7xl w-screen p-1 md:p-5">  */}
-        {/* <div className="w-full bg-orange-300"> */}
-        <div className="justify-items-center bg-orange-400  m-2 sm:mx-3 max-w-7xl w-screen p-1 md:p-5"> 
+        <div className="flex justify-center w-screen bbg-orange-200">
+        <div className="bbg-orange-400 w-full m-2 sm:mx-3 max-w-7xl p-1 md:p-5"> 
           {/* right.top pane */}
           <div className="flex flex-col sm:flex-row content-center justify-between ">
             <h1 className="font-bold text-xl">Dashboard</h1>
@@ -85,7 +85,7 @@ export default function Dashboard() {
             <InfoCard1 />
             <InfoCard2 />
           </div>
-        {/* </div> */}
+        </div>
         </div>
       </div>
     </>
