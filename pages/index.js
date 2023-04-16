@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
@@ -16,7 +17,7 @@ import {InfoCard1, InfoCard2} from "../components/dash-components/InfoCard";
 export default function Home() {
 
 
-  return (<Dashboard/>);
+  // return (<Dashboard/>);
   // return (<Card></Card>)
   // return (<Graph title="himanshu" subheader="chauhan" />)
   // return (<InfoCard2/>)

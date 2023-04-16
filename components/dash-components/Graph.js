@@ -7,15 +7,15 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {
 export default function Graph() {
   
 
-  const title = "Website Visits";
-  const subheader = "(+43%) than last year";
+  const title = "Activities";
+  // const subheader = "(+43%) than last year";
   const chartLabels = ["", "Week 1", "Week 2", "Week 3", "Week 4", ""];
 
   const chartData = [
     {
       name: "Guest",
       type: "line",
-      fill: "gradient",
+      fill: "solid",
       data: [100, 380, 200, 300, 160, 450],
     },
     {
@@ -28,7 +28,17 @@ export default function Graph() {
 
   const chartOptions = {
     plotOptions: { bar: { columnWidth: "16%" } },
-    fill: { type: chartData.map((i) => i.fill) },
+    fill: {
+      type: chartData.map((i) => i.fill),
+      opacity: 1,
+      gradient: {
+        type: 'vertical',
+        shadeIntensity: 0,
+        opacityFrom: 0.9,
+        opacityTo: 0,
+        stops: [0, 100],
+      },
+    },
     labels: chartLabels,
     xaxis: { type: "datetime" },
     colors: ["#9BDD7C", "#E9A0A0"],
@@ -86,17 +96,6 @@ export default function Graph() {
       },
     },
 
-    // Fill
-    fill: {
-      opacity: 1,
-      // gradient: {
-      //   type: 'vertical',
-      //   shadeIntensity: 0,
-      //   opacityFrom: 0.4,
-      //   opacityTo: 0,
-      //   stops: [0, 100],
-      // },
-    },
     // Datalabels
     dataLabels: { enabled: false },
 

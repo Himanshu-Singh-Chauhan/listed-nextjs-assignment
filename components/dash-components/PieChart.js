@@ -6,7 +6,7 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {
 
 
 export default function PieChart() {
-  const title = "Current Visits";
+  const title = "Cloths";
   const chartData = [
     { label: "Basic Tees", value: 55 },
     { label: "Custom Short Pants", value: 31 },
@@ -26,7 +26,7 @@ export default function PieChart() {
     colors: chartColors,
     labels: chartLabels,
     // stroke: { colors: [theme.palette.background.paper] },
-    legend: { floating: true, horizontalAlign: "center" },
+    legend: { floating: false, fontSize: '14px'},
     dataLabels: { enabled: true, dropShadow: { enabled: false } },
     // tooltip: {
     //   fillSeriesColor: false,
@@ -43,14 +43,14 @@ export default function PieChart() {
         endAngle: 360,
         expandOnClick: true,
         offsetX: 0,
-        offsetY: 30,
+        offsetY: 0,
         // customScale: 1,
         dataLabels: {
           offset: 0,
-          minAngleToShowLabel: 10,
+          // minAngleToShowLabel: 10,
         },
         donut: { labels: { show: false } },
-        customScale: 1,
+        // customScale: 1,
         // size: 1,
       },
     },
@@ -60,16 +60,19 @@ export default function PieChart() {
     dataLabels: {
       enabled: false,
     },
-    legend: {
-      show: true,
-      labels: {
-        // useSeriesColors: true,
+
+    responsive: [{
+      breakpoint: 1000,
+      options: {
+        legend: { floating: false, position: 'bottom'},
       },
-    },
+    }]
+  
+
   };
 
 
   return (
-      <ReactApexChart type="pie" series={chartSeries} options={chartOptions} width="100%" height="160" />
+      <ReactApexChart className='' type="pie" series={chartSeries} options={chartOptions} width="100%" height="100%" />
   );
 }
